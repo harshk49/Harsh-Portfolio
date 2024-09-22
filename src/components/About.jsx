@@ -30,9 +30,7 @@ const ABOUT_TEXT = (
       className="mb-4"
     >
       I thrive in team environments and enjoy tackling complex challenges,
-      always striving for innovative solutions. Outside of technology, I am
-      active in cricket and outdoor activities, and I have a keen interest in
-      entrepreneurship and emerging tech trends.
+      always striving for innovative solutions. Outside of technology, I'm passionate about cricket and love engaging in outdoor activities, which keep my energy high and my competitive spirit alive! I also have an enthusiastic interest in entrepreneurship and emerging tech trends, always eager to explore innovative ideas and opportunities that shape the future.
     </motion.p>
     <motion.p
       whileInView={{ opacity: 1, y: 0 }}
