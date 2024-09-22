@@ -46,7 +46,7 @@ const Contact = () => {
         </motion.div>
         <br />
         <motion.a
-          href="https://drive.google.com/uc?export=download&id=1OfTxjVluvIvgdb8vGVZs_Y-XRuSiKfzb" // Direct download link
+          href="https://drive.google.com/uc?export=download&id=1qw4CoEhDn7AfXN-PRobaifDsggy8OkJe" // Direct download link
           className="px-6 py-3 text-lg text-black transition duration-300 rounded shadow-md bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-400 hover:to-purple-400"
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
