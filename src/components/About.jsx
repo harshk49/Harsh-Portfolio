@@ -18,8 +18,8 @@ const ABOUT_TEXT = (
       transition={{ duration: 0.5, delay: 0.4 }} // Added delay
       className="mb-4"
     >
-      I have gained hands-on experience through projects such as a Notes App and
-      a Spotify Clone, utilizing React, Node.js, and various databases.
+      I have gained hands-on experience through projects such as Notes App and
+      Spotify Clone, utilizing React, Node.js, and various databases.
       Currently, I am developing the IMC portal, which is helping me refine my
       project management and collaboration skills.
     </motion.p>
