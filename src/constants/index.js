@@ -46,5 +46,5 @@ export const CONTACT = {
   address:
     "Address: 201 Dhanwantri Nagar, Near Rajendra Nagar, Indore, Madhya Pradesh 452012, India",
   phoneNo: "Phone: +91 7974980140",
-  email: "Email: harshkardile@gmail.com",
+  email: "Email: harshkardile49@gmail.com",
 };
