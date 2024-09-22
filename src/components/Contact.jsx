@@ -3,16 +3,16 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="border-b border-neutral-900 pb-20 flex flex-col items-center">
+    <div className="flex flex-col items-center pb-20 border-b border-neutral-900">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="my-20 text-center text-5xl bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
+        className="my-20 text-5xl text-center text-transparent bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text"
       >
         Get in <span className="text-neutral-500"> Touch</span>
       </motion.h2>
-      <div className="text-center tracking-tighter">
+      <div className="tracking-tighter text-center">
         <motion.p
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
@@ -39,7 +39,7 @@ const Contact = () => {
         >
           <a
             href={`mailto:${CONTACT.email.split(": ")[1]}`}
-            className="border-b text-white"
+            className="text-white border-b"
           >
             {CONTACT.email.split(": ")[1]}
           </a>
@@ -47,7 +47,7 @@ const Contact = () => {
         <br />
         <motion.a
           href="https://drive.google.com/uc?export=download&id=1OfTxjVluvIvgdb8vGVZs_Y-XRuSiKfzb" // Direct download link
-          className="bg-gradient-to-r from-blue-500 to-purple-500 text-black py-3 px-6 text-lg rounded shadow-md hover:from-blue-400 hover:to-purple-400 transition duration-300"
+          className="px-6 py-3 text-lg text-black transition duration-300 rounded shadow-md bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-400 hover:to-purple-400"
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1 }}

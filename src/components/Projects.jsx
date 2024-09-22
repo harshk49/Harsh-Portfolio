@@ -3,23 +3,23 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className="pb-4 border-b border-neutral-900">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="pb-2 my-20 text-center text-5xl bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
+        className="pb-2 my-20 text-5xl text-center text-transparent bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text"
       >
         Projects
       </motion.h2>
       <div>
         {PROJECTS.map((project, index) => (
-          <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
+          <div key={index} className="flex flex-wrap mb-8 lg:justify-center">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
-              className="w-full lg:w-1/4 flex justify-center"
+              className="flex justify-center w-full lg:w-1/4"
             >
               <img
                 src={project.image}
@@ -40,7 +40,7 @@ const Projects = () => {
               {project.technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="mr-2 rounded bg-black px-2 py-1 text-sm font-medium text-white"
+                  className="px-2 py-1 mb-2 mr-2 text-xs font-medium text-white bg-black rounded sm:text-sm"
                 >
                   {tech}
                 </span>
