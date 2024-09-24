@@ -45,17 +45,24 @@ const Contact = () => {
           </a>
         </motion.div>
         <br />
-        <motion.a
-          href="https://drive.google.com/uc?export=download&id=1qw4CoEhDn7AfXN-PRobaifDsggy8OkJe" // Direct download link
-          className="px-6 py-3 text-lg text-black transition duration-300 rounded shadow-md bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-400 hover:to-purple-400"
+        <motion.button
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/uc?export=download&id=1qw4CoEhDn7AfXN-PRobaifDsggy8OkJe"
+            )
+          }
+          className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50"
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1 }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          Download CV
-        </motion.a>
+          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+          <span className="inline-flex items-center justify-center w-full h-full px-8 py-1 text-sm font-medium rounded-full cursor-pointer bg-gray-950 text-gray-50 backdrop-blur-3xl">
+            Download CV
+          </span>
+        </motion.button>
       </div>
     </div>
   );
