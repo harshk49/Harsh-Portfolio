@@ -8,7 +8,7 @@ const Projects = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="pb-2 my-20 text-5xl text-center text-transparent bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text"
+        className="pb-2 my-20 text-5xl text-center text-transparent bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text"
       >
         Projects
       </motion.h2>
