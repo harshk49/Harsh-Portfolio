@@ -19,9 +19,9 @@ const ABOUT_TEXT = (
       className="mb-4"
     >
       I have gained hands-on experience through projects such as Notes App and
-      Spotify Clone, utilizing React, Node.js, and various databases.
-      Currently, I am developing the IMC portal, which is helping me refine my
-      project management and collaboration skills.
+      Spotify Clone, utilizing React, Node.js, and various databases. Currently,
+      I am developing the IMC portal, which is helping me refine my project
+      management and collaboration skills.
     </motion.p>
     <motion.p
       whileInView={{ opacity: 1, y: 0 }}
@@ -30,7 +30,11 @@ const ABOUT_TEXT = (
       className="mb-4"
     >
       I thrive in team environments and enjoy tackling complex challenges,
-      always striving for innovative solutions. Outside of technology, I'm passionate about cricket and love engaging in outdoor activities, which keep my energy high and my competitive spirit alive! I also have an enthusiastic interest in entrepreneurship and emerging tech trends, always eager to explore innovative ideas and opportunities that shape the future.
+      always striving for innovative solutions. Outside of technology, I'm
+      passionate about cricket and love engaging in outdoor activities, which
+      keep my energy high and my competitive spirit alive! I also have an
+      enthusiastic interest in entrepreneurship and emerging tech trends, always
+      eager to explore innovative ideas and opportunities that shape the future.
     </motion.p>
     <motion.p
       whileInView={{ opacity: 1, y: 0 }}
@@ -50,11 +54,11 @@ const About = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="my-20 text-5xl text-center text-transparent bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text"
+        className="inline-flex animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-xl text-transparent"
       >
-        About
-        <span className="text-neutral-500"> Me</span>
+        About Me
       </motion.h2>
+
       <div className="flex flex-wrap">
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
