@@ -51,14 +51,17 @@ const About = () => {
   return (
     <div className="pb-4 border-b border-neutral-900">
       <div className="text-center">
-        <motion.h2
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: -100 }}
-          transition={{ duration: 0.5 }}
-          className="inline-flex animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-4xl text-transparent pb-2 m-20"
-        >
-          About Me
-        </motion.h2>
+        <div className="flex justify-center">
+          <motion.h2
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: -100 }}
+            transition={{ duration: 0.5 }}
+            className="animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-4xl text-transparent pb-2 mx-2"
+            style={{ whiteSpace: "nowrap" }} // Prevents line break
+          >
+            About Me
+          </motion.h2>
+        </div>
       </div>
 
       <div className="flex flex-wrap">
