@@ -33,7 +33,8 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="pb-2 my-20 text-5xl text-center text-transparent bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text"
+        className="animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-4xl lg:text-5xl text-transparent pb-2 my-20" // Updated class names
+        style={{ whiteSpace: "nowrap" }} // Prevents line break
       >
         Technologies Known
       </motion.h2>
