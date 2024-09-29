@@ -7,7 +7,7 @@ import {
   RiReactjsLine,
   RiTailwindCssFill,
 } from "react-icons/ri";
-import { SiExpress, SiGooglecloud, SiMongodb, SiPostman } from "react-icons/si";
+import { SiMongodb, SiPostman } from "react-icons/si";
 import GoogleCloud from "../assets/google_cloud.png"; // Correct import statement
 import { motion } from "framer-motion";
 
@@ -28,12 +28,12 @@ const boxSize = "w-24 h-24"; // Set a uniform size for the boxes
 
 const Technologies = () => {
   return (
-    <div className="border-b border-neutral-800 pb-24">
+    <div className="pb-24 border-b border-neutral-800">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="pb-2 my-20 text-center text-5xl bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent"
+        className="pb-2 my-20 text-5xl text-center text-transparent bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text"
       >
         Technologies
         <span className="text-neutral-500"> Known</span>
