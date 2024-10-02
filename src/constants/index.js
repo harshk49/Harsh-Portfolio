@@ -18,7 +18,7 @@ export const PROJECTS = [
     image: project2, // Add the appropriate image import
     description:
       "The Notes App is a user-friendly MERN stack application that lets users create, edit, delete, and manage notes with a responsive interface designed using Tailwind CSS.",
-    technologies: ["React", "Tailwind CSS", "Node.js", "MongoDB", "Express.js"],
+    technologies: ["React", "Tailwind", "Node.js", "MongoDB", "Express.js"],
   },
   {
     title: "CricScorer",
@@ -32,13 +32,7 @@ export const PROJECTS = [
     image: project4, // Add the appropriate image import
     description:
       "A web application that replicates Spotify's core functionalities, including music streaming, playlists, and user authentication.",
-    technologies: [
-      "React",
-      "Tailwind CSS",
-      "GraphQL",
-      "Node.js",
-      "RESTful API ",
-    ],
+    technologies: ["React", "Tailwind", "GraphQL", "Node.js", "RESTful API "],
   },
 ];
 
