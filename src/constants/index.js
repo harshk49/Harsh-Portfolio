@@ -8,41 +8,31 @@ export const HERO_CONTENT = `Passionate Full Stack Developer with expertise in b
 export const PROJECTS = [
   {
     title: "Cipher Vault",
-    image: project1, // Add the appropriate image import
+    image: project1,
     description:
       "Cipher Vault is a web app for encrypting and decrypting text using ciphers like Caesar, Vigenère, and Atbash.",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
     title: "Notes App",
-    image: project2, // Add the appropriate image import
+    image: project2,
     description:
       "The Notes App is a user-friendly MERN stack application that lets users create, edit, delete, and manage notes with a responsive interface designed using Tailwind CSS.",
     technologies: ["React", "Tailwind", "Node.js", "MongoDB", "Express.js"],
   },
   {
     title: "CricScorer",
-    image: project3, // Add the appropriate image import
+    image: project3,
     description:
       "A cricket scoring application that allows users to keep track of match scores, player statistics, and team standings.",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
     title: "Spotify Clone",
-    image: project4, // Add the appropriate image import
+    image: project4,
     description:
       "A web application that replicates Spotify's core functionalities, including music streaming, playlists, and user authentication.",
-<<<<<<< HEAD
-    technologies: ["React", "Tailwind", "GraphQL", "Node.js", "RESTful API "],
-=======
-    technologies: [
-      "React",
-      "Tailwind",
-      "GraphQL",
-      "Node.js",
-      "RESTful API ",
-    ],
->>>>>>> 68a29b4149493e3516684ea5bcb546f8f5ea1fb5
+    technologies: ["React", "Tailwind", "GraphQL", "Node.js", "RESTful API"],
   },
 ];
 
