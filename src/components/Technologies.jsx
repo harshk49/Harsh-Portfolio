@@ -131,12 +131,7 @@ const Technologies = () => {
         >
           <SiPostman className="text-5xl text-orange-500" /> {/* Postman */}
         </motion.div>
-        <div
-          className={`rounded-2xl border-4 border-neutral-800 p-4 flex items-center justify-center ${boxSize}`}
-        >
-          <img src={GoogleCloud} alt="Google Cloud" className="w-16 h-16" />{" "}
-          {/* Google Cloud */}
-        </div>
+
         <motion.div
           variants={iconVariants(4)}
           initial="initial"
