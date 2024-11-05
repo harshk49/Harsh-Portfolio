@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion"; // Import Framer Motion
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -7,30 +9,63 @@ import Projects from "./components/Projects";
 import Technologies from "./components/Technologies";
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading time for demo purposes
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust time as needed or remove if loading is dynamic
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="overflow-x-hidden antialiased text-neutral-300 selection:bg-cyan-300 selection:text-cyan-900">
-      <div className="fixed top-0 w-full h-full -z-10">
-        <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
-      </div>
-      <div className="container px-8 mx-auto">
-        <Navbar />
-        <div id="home">
-          <Hero />
-        </div>
-        <div id="about">
-          <About />
-        </div>
-        <div id="technologies">
-          <Technologies />
-        </div>
-        <div id="projects">
-          <Projects />
-        </div>
-        <div id="contact">
-          <Contact />
-        </div>
-        <Footer />
-      </div>
+      {loading ? (
+        <motion.div
+          className="fixed inset-0 flex items-center justify-center bg-black z-50"
+          initial={{ opacity: 0 }} // Initial state
+          animate={{ opacity: 1 }} // Animate to full opacity
+          transition={{ duration: 0.5 }} // Animation duration
+        >
+          <img
+            src="/hk_logo.png"
+            alt="Loading Logo"
+            className="w-32 h-32 animate-bounce"
+          />
+        </motion.div>
+      ) : (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.8, y: -20 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="fixed top-0 w-full h-full -z-10">
+            <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+          </div>
+          <div className="container px-8 mx-auto">
+            <Navbar />
+            <div id="home">
+              <Hero />
+            </div>
+            <div id="about">
+              <About />
+            </div>
+            <div id="technologies">
+              <Technologies />
+            </div>
+            <div id="projects">
+              <Projects />
+            </div>
+            <div id="contact">
+              <Contact />
+            </div>
+            <Footer />
+          </div>
+        </motion.div>
+      )}
     </div>
   );
 };
