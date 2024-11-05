@@ -7,9 +7,10 @@ import {
   RiReactjsLine,
   RiTailwindCssFill,
 } from "react-icons/ri";
-import { SiMongodb, SiPostman } from "react-icons/si";
+import { SiMongodb, SiPostman, SiTypescript } from "react-icons/si";
 import GoogleCloud from "../assets/google_cloud.png"; // Correct import statement
 import { motion } from "framer-motion";
+import { BiLogoTypescript } from "react-icons/bi";
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -36,12 +37,15 @@ const Technologies = () => {
         className="animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-transparent pb-2 my-10 sm:my-20 text-center"
         style={{ whiteSpace: "nowrap" }}
       >
-        <motion.h2 className="text-3xl sm:text-4xl lg:text-5xl">
-          Technologies
-        </motion.h2>
-        <motion.h2 className="text-3xl sm:text-4xl lg:text-5xl">
-          Known
-        </motion.h2>
+        {/* Added margin-top for spacing */}
+        <div className="mt-8">
+          <motion.h2 className="text-3xl sm:text-4xl lg:text-5xl">
+            Technologies
+          </motion.h2>
+          <motion.h2 className="text-3xl sm:text-4xl lg:text-5xl">
+            Known
+          </motion.h2>
+        </div>
       </motion.div>
 
       <motion.div
@@ -66,7 +70,8 @@ const Technologies = () => {
           animate="animate"
           className={`rounded-2xl border-4 border-neutral-800 p-4 flex items-center justify-center ${boxSize}`}
         >
-          <DiDjango className="text-5xl text-green-900" /> {/* Django */}
+          <BiLogoTypescript className="text-5xl text-blue-400" />{" "}
+          {/* TypeScript */}
         </motion.div>
         <motion.div
           variants={iconVariants(5)}

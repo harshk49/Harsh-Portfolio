@@ -9,9 +9,9 @@ const ABOUT_TEXT = (
       transition={{ duration: 0.5 }}
       className="mb-4 text-justify"
     >
-      I am a driven web developer in my 4th year of studying Computer Science,
-      with a specialization in Information and Cyber Security. I don’t just
-      write code; I create solutions that elevate user experiences and drive
+      I am a driven programmer in my 4th year of studying Computer Science, with
+      a specialization in Information and Cyber Security. I don’t just write
+      code; I create solutions that elevate user experiences and drive
       innovation.
     </motion.p>
     <motion.p

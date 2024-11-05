@@ -1,5 +1,8 @@
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
+import { FaLinkedin, FaInstagram, FaFacebook, FaGithub } from "react-icons/fa";
+import { TbBrandThreads } from "react-icons/tb";
+import { SiX } from "react-icons/si"; // Import the X icon
 
 const Contact = () => {
   return (
@@ -8,12 +11,12 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="text-center animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-4xl lg:text-5xl text-transparent pb-2 my-20" // Updated class names
-        style={{ whiteSpace: "nowrap" }} // Prevents line break
+        className="text-center animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-4xl lg:text-5xl text-transparent pb-2 my-20"
+        style={{ whiteSpace: "nowrap" }}
       >
         Get in Touch
       </motion.h2>
-      <div className="tracking-tighter text-center">
+      <div className="w-full max-w-md px-4 mx-auto tracking-tighter text-center">
         <motion.p
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
@@ -64,6 +67,76 @@ const Contact = () => {
             Download CV
           </span>
         </motion.button>
+
+        {/* Social Icons Section */}
+        <motion.div className="flex flex-wrap justify-center gap-4 mx-auto mt-8">
+          <motion.a
+            href="https://www.linkedin.com/in/harsh-kardile-887b16215/"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 0.9 }}
+            className="text-xl text-white md:text-2xl place-self-center"
+          >
+            <FaLinkedin />
+          </motion.a>
+          <motion.a
+            href="https://www.instagram.com/harsh_kardile49?igsh=djJ0dGd0NHdyb3Ex"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 0.9 }}
+            className="text-xl text-white md:text-2xl place-self-center"
+          >
+            <FaInstagram />
+          </motion.a>
+
+          <motion.a
+            href="https://x.com/justharsh49"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 0.9 }}
+            className="text-xl text-white md:text-2xl place-self-center"
+          >
+            <SiX /> {/* Use X icon */}
+          </motion.a>
+          <motion.a
+            href="https://www.threads.net/@harsh_kardile49?invite=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 1, delay: 0.6 }}
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 0.9 }}
+            className="text-xl text-white md:text-2xl place-self-center"
+          >
+            <TbBrandThreads />
+          </motion.a>
+          <motion.a
+            href="https://github.com/harshk49"
+            target="_blank"
+            rel="noopener noreferrer"
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ duration: 1, delay: 0.7 }}
+            whileHover={{ scale: 1.3 }}
+            whileTap={{ scale: 0.9 }}
+            className="text-xl text-white md:text-2xl place-self-center"
+          >
+            <FaGithub />
+          </motion.a>
+        </motion.div>
       </div>
     </div>
   );

@@ -1,51 +1,100 @@
-import { FaInstagram, FaSquareXTwitter, FaThreads } from "react-icons/fa6";
-import logo from "../assets/hk_logo.png";
-import { FaGithub, FaLinkedin, FaStackOverflow } from "react-icons/fa";
+import React, { useState } from "react";
+import logo from "./../../public/hk_logo.png";
 
 const Navbar = () => {
+  const [isNavbarVisible, setIsNavbarVisible] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsNavbarVisible(!isNavbarVisible);
+  };
+
+  const handleScroll = (event) => {
+    event.preventDefault(); // Prevent the default anchor link behavior
+    const targetId = event.currentTarget.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      const topOffset = 70; // Adjust this value if you have a fixed header
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - topOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth", // Smooth scrolling
+      });
+    }
+  };
+
   return (
-    <nav className="mb-20 flex items-center justify-between py-6">
-      <div className="flex flex-shrink-0 items-center">
-        <img className="mx-2 w-12" src={logo} alt="Harsh Kardile Logo" />
+    <div className="relative">
+      {/* Logo container - stays at the top */}
+      <div className="flex items-center justify-between p-4 mt-4">
+        <img
+          className="w-10 h-10 cursor-pointer"
+          src={logo}
+          alt="Logo"
+          onClick={toggleNavbar}
+        />
+        {/* Navigation links - only visible on larger screens */}
+        <div
+          className={`fixed top-4 left-1/2 transform -translate-x-1/2 z-50 transition-opacity duration-300 ease-in-out hidden md:block ${
+            isNavbarVisible ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <nav>
+            <div className="px-6 py-2 bg-white rounded-full shadow-lg bg-opacity-20 backdrop-blur-md">
+              <ul className="flex gap-8">
+                <li>
+                  <a
+                    href="#home"
+                    onClick={handleScroll} // Add the scroll handler here
+                    className="tracking-tight text-transparent bg-gradient-to-r from-[#00C6FF] to-[#0072FF] bg-clip-text transition-colors hover:text-cyan-500"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    onClick={handleScroll}
+                    className="tracking-tight text-transparent bg-gradient-to-r from-[#00C6FF] to-[#0072FF] bg-clip-text transition-colors hover:text-cyan-500"
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#technologies"
+                    onClick={handleScroll}
+                    className="tracking-tight text-transparent bg-gradient-to-r from-[#00C6FF] to-[#0072FF] bg-clip-text transition-colors hover:text-cyan-500"
+                  >
+                    Technologies
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#projects"
+                    onClick={handleScroll}
+                    className="tracking-tight text-transparent bg-gradient-to-r from-[#00C6FF] to-[#0072FF] bg-clip-text transition-colors hover:text-cyan-500"
+                  >
+                    Projects
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    onClick={handleScroll}
+                    className="tracking-tight text-transparent bg-gradient-to-r from-[#00C6FF] to-[#0072FF] bg-clip-text transition-colors hover:text-cyan-500"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
-      <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <a
-          href="https://www.linkedin.com/in/harsh-kardile-887b16215"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="https://github.com/harshk49"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://www.instagram.com/harsh_kardile49?igsh=djJ0dGd0NHdyb3Ex"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaInstagram />
-        </a>
-        <a
-          href="https://x.com/justharsh49"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaSquareXTwitter />
-        </a>
-        <a
-          href="https://www.threads.net/@harsh_kardile49?xmt=AQGztUEdc87GfujPM3_QP8yhhXpZ7Kjf16EnUOV-r2oniyk"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaThreads />
-        </a>
-      </div>
-    </nav>
+    </div>
   );
 };
 

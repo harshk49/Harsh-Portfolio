@@ -14,11 +14,21 @@ const App = () => {
       </div>
       <div className="container px-8 mx-auto">
         <Navbar />
-        <Hero />
-        <About />
-        <Technologies />
-        <Projects />
-        <Contact />
+        <div id="home">
+          <Hero />
+        </div>
+        <div id="about">
+          <About />
+        </div>
+        <div id="technologies">
+          <Technologies />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
         <Footer />
       </div>
     </div>

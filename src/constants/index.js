@@ -15,8 +15,8 @@ export const PROJECTS = [
     title: "Cipher Vault",
     image: project1,
     description:
-      "Cipher Vault is a web app for encrypting and decrypting text using ciphers like Caesar, Vigenère, and Atbash.",
-    technologies: ["HTML", "CSS", "JavaScript"],
+      "Cipher Vault is a web app for encrypting and decrypting text using ciphers like Caesar, Vigenère, and Atbash etc.",
+    technologies: ["C++"],
   },
   {
     title: "Notes App",
