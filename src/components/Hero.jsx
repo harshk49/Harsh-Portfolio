@@ -56,7 +56,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1.2 }}
             src={profilePic}
             alt="Harsh Kardile"
-            className="block mt-6 rounded-2xl w-62 h-62 lg:w-auto lg:h-auto lg:hidden grayscale" // Corrected to show on small screens and hide on large screens
+            className="block mt-6 rounded-2xl w-62 h-62 lg:w-auto lg:h-auto lg:hidden " // Corrected to show on small screens and hide on large screens
           />
         </div>
       </div>
