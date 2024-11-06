@@ -33,7 +33,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="animate-text-gradient bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-transparent pb-2 my-10 sm:my-20 text-center"
+        className="animate-text-gradient bg-gradient-to-r from-black via-[#FFD700] to-[#FFBCB3] bg-[200%_auto] bg-clip-text text-4xl lg:text-5xl text-transparent pb-2 my-20 text-center"
         style={{ whiteSpace: "nowrap" }}
       >
         <div className="mt-8">

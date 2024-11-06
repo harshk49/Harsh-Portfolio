@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <div className="relative">
       {/* Logo container - stays at the top */}
-      <div className="flex items-center justify-between p-4 mt-4">
+      <div className="flex items-center justify-between ">
         <img
           className="w-10 h-10 cursor-pointer"
           src={logo}
@@ -48,7 +48,7 @@ const Navbar = () => {
                   <a
                     href="#home"
                     onClick={handleScroll} // Add the scroll handler here
-                    className="tracking-tight text-transparent bg-gradient-to-r from-[#00C6FF] to-[#0072FF] bg-clip-text transition-colors hover:text-cyan-500"
+                    className="tracking-tight text-transparent bg-gradient-to-r from-[#FFD700] to-[#FFBCB3] bg-clip-text transition-colors hover:text-cyan-500"
                   >
                     Home
                   </a>
@@ -57,7 +57,7 @@ const Navbar = () => {
                   <a
                     href="#about"
                     onClick={handleScroll}
-                    className="tracking-tight text-transparent bg-gradient-to-r from-[#00C6FF] to-[#0072FF] bg-clip-text transition-colors hover:text-cyan-500"
+                    className="tracking-tight text-transparent bg-gradient-to-r from-[#FFD700] to-[#FFBCB3] bg-clip-text transition-colors hover:text-cyan-500"
                   >
                     About
                   </a>
@@ -66,7 +66,7 @@ const Navbar = () => {
                   <a
                     href="#technologies"
                     onClick={handleScroll}
-                    className="tracking-tight text-transparent bg-gradient-to-r from-[#00C6FF] to-[#0072FF] bg-clip-text transition-colors hover:text-cyan-500"
+                    className="tracking-tight text-transparent bg-gradient-to-r from-[#FFD700] to-[#FFBCB3] bg-clip-text transition-colors hover:text-cyan-500"
                   >
                     Technologies
                   </a>
@@ -75,7 +75,7 @@ const Navbar = () => {
                   <a
                     href="#projects"
                     onClick={handleScroll}
-                    className="tracking-tight text-transparent bg-gradient-to-r from-[#00C6FF] to-[#0072FF] bg-clip-text transition-colors hover:text-cyan-500"
+                    className="tracking-tight text-transparent bg-gradient-to-r from-[#FFD700] to-[#FFBCB3] bg-clip-text transition-colors hover:text-cyan-500"
                   >
                     Projects
                   </a>
@@ -84,7 +84,7 @@ const Navbar = () => {
                   <a
                     href="#contact"
                     onClick={handleScroll}
-                    className="tracking-tight text-transparent bg-gradient-to-r from-[#00C6FF] to-[#0072FF] bg-clip-text transition-colors hover:text-cyan-500"
+                    className="tracking-tight text-transparent bg-gradient-to-r from-[#FFD700] to-[#FFBCB3] bg-clip-text transition-colors hover:text-cyan-500"
                   >
                     Contact
                   </a>
