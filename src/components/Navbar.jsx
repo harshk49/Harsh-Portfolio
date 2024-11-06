@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <div className="relative">
       {/* Logo container - stays at the top */}
-      <div className="flex items-center justify-between p-4 mt-4">
+      <div className="flex items-center justify-between ">
         <img
           className="w-10 h-10 cursor-pointer"
           src={logo}
