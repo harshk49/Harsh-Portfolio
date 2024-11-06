@@ -57,7 +57,7 @@ const Technologies = () => {
           variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
-          className={`rounded-2xl border-4 border-neutral-800 p-4 flex items-center justify-center ${boxSize}`}
+          className={`rounded-2xl border-4 border-neutral-500 p-4 flex items-center justify-center ${boxSize}`}
         >
           <RiJavascriptFill className="text-5xl text-yellow-500" />{" "}
           {/* JavaScript */}
@@ -66,7 +66,7 @@ const Technologies = () => {
           variants={iconVariants(3)}
           initial="initial"
           animate="animate"
-          className={`rounded-2xl border-4 border-neutral-800 p-4 flex items-center justify-center ${boxSize}`}
+          className={`rounded-2xl border-4 border-neutral-500 p-4 flex items-center justify-center ${boxSize}`}
         >
           <BiLogoTypescript className="text-5xl text-blue-400" />{" "}
           {/* TypeScript */}
@@ -75,7 +75,7 @@ const Technologies = () => {
           variants={iconVariants(5)}
           initial="initial"
           animate="animate"
-          className={`rounded-2xl border-4 border-neutral-800 p-4 flex items-center justify-center ${boxSize}`}
+          className={`rounded-2xl border-4 border-neutral-500 p-4 flex items-center justify-center ${boxSize}`}
         >
           <RiReactjsLine className="text-5xl text-blue-400" /> {/* React */}
         </motion.div>
@@ -83,7 +83,7 @@ const Technologies = () => {
           variants={iconVariants(2)}
           initial="initial"
           animate="animate"
-          className={`rounded-2xl border-4 border-neutral-800 p-4 flex items-center justify-center ${boxSize}`}
+          className={`rounded-2xl border-4 border-neutral-500 p-4 flex items-center justify-center ${boxSize}`}
         >
           <RiNodejsLine className="text-5xl text-green-700" /> {/* Node.js */}
         </motion.div>
@@ -91,7 +91,7 @@ const Technologies = () => {
           variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
-          className={`rounded-2xl border-4 border-neutral-800 p-4 flex items-center justify-center ${boxSize}`}
+          className={`rounded-2xl border-4 border-neutral-500 p-4 flex items-center justify-center ${boxSize}`}
         >
           <RiTailwindCssFill className="text-5xl text-blue-500" />{" "}
           {/* Tailwind CSS */}
@@ -109,7 +109,7 @@ const Technologies = () => {
           variants={iconVariants(4)}
           initial="initial"
           animate="animate"
-          className={`rounded-2xl border-4 border-neutral-800 p-4 flex items-center justify-center ${boxSize}`}
+          className={`rounded-2xl border-4 border-neutral-500 p-4 flex items-center justify-center ${boxSize}`}
         >
           <SiMongodb className="text-5xl text-green-600" /> {/* MongoDB */}
         </motion.div>
@@ -117,7 +117,7 @@ const Technologies = () => {
           variants={iconVariants(3.5)}
           initial="initial"
           animate="animate"
-          className={`rounded-2xl border-4 border-neutral-800 p-4 flex items-center justify-center ${boxSize}`}
+          className={`rounded-2xl border-4 border-neutral-500 p-4 flex items-center justify-center ${boxSize}`}
         >
           <FaGitAlt className="text-5xl text-red-600" /> {/* Git */}
         </motion.div>
@@ -125,7 +125,7 @@ const Technologies = () => {
           variants={iconVariants(1.5)}
           initial="initial"
           animate="animate"
-          className={`rounded-2xl border-4 border-neutral-800 p-4 flex items-center justify-center ${boxSize}`}
+          className={`rounded-2xl border-4 border-neutral-500 p-4 flex items-center justify-center ${boxSize}`}
         >
           <SiPostman className="text-5xl text-orange-500" /> {/* Postman */}
         </motion.div>
@@ -134,7 +134,7 @@ const Technologies = () => {
           variants={iconVariants(4)}
           initial="initial"
           animate="animate"
-          className={`rounded-2xl border-4 border-neutral-800 p-4 flex items-center justify-center ${boxSize}`}
+          className={`rounded-2xl border-4 border-neutral-500 p-4 flex items-center justify-center ${boxSize}`}
         >
           <GrGraphQl className="text-5xl text-pink-600" />
         </motion.div>
