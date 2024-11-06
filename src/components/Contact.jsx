@@ -62,7 +62,7 @@ const Contact = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#ffffff_0%,#FFD700_50%,#ffffff_100%)]" />
           <span className="inline-flex items-center justify-center w-full h-full px-8 py-1 text-sm font-medium rounded-full cursor-pointer bg-gray-950 text-gray-50 backdrop-blur-3xl">
             Download CV
           </span>
