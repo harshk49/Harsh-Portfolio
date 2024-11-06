@@ -8,9 +8,9 @@ import spotify from "../assets/spotify.jpg";
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
-  hidden: { x: 100, opacity: 0 }, // Start from the right (x: 100)
+  hidden: { x: 100, opacity: 0 },
   visible: {
-    x: 0, // Move to the left (x: 0)
+    x: 0,
     opacity: 1,
     transition: { duration: 0.5, delay: delay },
   },
@@ -19,7 +19,6 @@ const container = (delay) => ({
 const Hero = () => {
   return (
     <div className="pb-20 border-b border-neutral-900 lg:mb-35">
-      {/* Increased bottom padding */}
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
@@ -56,7 +55,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1.2 }}
             src={profilePic}
             alt="Harsh Kardile"
-            className="block mt-6 rounded-2xl w-62 h-62 lg:w-auto lg:h-auto lg:hidden " // Corrected to show on small screens and hide on large screens
+            className="block mt-6 rounded-2xl w-62 h-62 lg:w-auto lg:h-auto lg:hidden"
           />
         </div>
       </div>
@@ -66,7 +65,7 @@ const Hero = () => {
         variants={container(1.5)}
         initial="hidden"
         animate="visible"
-        className="absolute hidden w-48 h-48 -mt-8 -mr-4 bg-transparent border-2 border-gray-500 top-2 right-16 rounded-xl lg:block"
+        className="absolute hidden w-48 h-48 -mt-8 -mr-4 bg-transparent border-2 border-white top-2 right-16 rounded-xl lg:block shadow-white"
       >
         <img
           src={cricket}
@@ -80,7 +79,7 @@ const Hero = () => {
         variants={container(2)}
         initial="hidden"
         animate="visible"
-        className="absolute hidden w-48 h-48 -mt-8 -mr-4 bg-transparent border-2 border-gray-500 top-56 right-16 rounded-xl lg:block"
+        className="absolute hidden w-48 h-48 -mt-8 -mr-4 bg-transparent border-2 border-white top-56 right-16 rounded-xl lg:block shadow-white"
       >
         <img
           src={spotify}
@@ -94,7 +93,7 @@ const Hero = () => {
         variants={container(2.5)}
         initial="hidden"
         animate="visible"
-        className="absolute hidden w-48 h-48 -mt-8 -mr-4 bg-transparent border-2 border-gray-500 top-[440px] right-16 rounded-xl lg:block"
+        className="absolute hidden w-48 h-48 -mt-8 -mr-4 bg-transparent border-2 border-white top-[440px] right-16 rounded-xl lg:block shadow-white"
       >
         <img
           src={tajMahal}
@@ -108,7 +107,7 @@ const Hero = () => {
         variants={container(3)}
         initial="hidden"
         animate="visible"
-        className="absolute hidden w-72 h-72 -mt-8 -mr-4 bg-transparent border-2 border-gray-500 top-32 right-[300px] rounded-xl lg:block"
+        className="absolute hidden w-72 h-72 -mt-8 -mr-4 bg-transparent border-2 border-white top-32 right-[300px] rounded-xl lg:block shadow-white"
       >
         <img
           src={profilePic}
@@ -122,7 +121,7 @@ const Hero = () => {
         variants={container(3.5)}
         initial="hidden"
         animate="visible"
-        className="absolute hidden w-48 h-48 -mt-8 -mr-4 bg-transparent border-2 border-gray-500 -top-24 right-[300px] rounded-xl lg:block"
+        className="absolute hidden w-48 h-48 -mt-8 -mr-4 bg-transparent border-2 border-white -top-24 right-[300px] rounded-xl lg:block shadow-white"
       >
         {/* Content for Fifth Container */}
       </motion.div>
@@ -132,7 +131,7 @@ const Hero = () => {
         variants={container(4)}
         initial="hidden"
         animate="visible"
-        className="absolute hidden w-48 h-48 -mt-8 -mr-4 bg-transparent border-2 border-gray-500 top-[440px] right-[300px] rounded-xl lg:block"
+        className="absolute hidden w-48 h-48 -mt-8 -mr-4 bg-transparent border-2 border-white top-[440px] right-[300px] rounded-xl lg:block shadow-white"
       >
         <img
           src={shelf}
