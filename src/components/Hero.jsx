@@ -55,7 +55,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1.2 }}
             src={profilePic}
             alt="Harsh Kardile"
-            className="block mt-6 rounded-2xl w-62 h-62 lg:w-auto lg:h-auto lg:hidden"
+            className="block mt-6 shadow-lg rounded-2xl w-62 h-62 lg:w-auto lg:h-auto lg:hidden shadow-black"
           />
         </div>
       </div>
