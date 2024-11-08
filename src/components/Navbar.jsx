@@ -28,9 +28,11 @@ const Navbar = () => {
   return (
     <div className="relative">
       {/* Logo container - stays at the top */}
-      <div className="flex items-center justify-between ">
+      <div className="flex items-center justify-between px-4 py-5">
+        {" "}
+        {/* Added padding here */}
         <img
-          className="w-10 h-10 cursor-pointer"
+          className="w-10 h-10 mr-4 cursor-pointer"
           src={logo}
           alt="Logo"
           onClick={toggleNavbar}
@@ -47,7 +49,7 @@ const Navbar = () => {
                 <li>
                   <a
                     href="#home"
-                    onClick={handleScroll} // Add the scroll handler here
+                    onClick={handleScroll}
                     className="tracking-tight text-transparent bg-gradient-to-r from-[#FFD700] to-[#FFBCB3] bg-clip-text transition-colors hover:text-cyan-500"
                   >
                     Home
