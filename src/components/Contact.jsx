@@ -17,22 +17,7 @@ const Contact = () => {
         Get in Touch
       </motion.h2>
       <div className="w-full max-w-md px-4 mx-auto tracking-tighter text-center">
-        <motion.p
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 1 }}
-          className="my-4"
-        >
-          {CONTACT.address}
-        </motion.p>
-        <motion.p
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 1 }}
-          className="my-4"
-        >
-          {CONTACT.phoneNo}
-        </motion.p>
+        {/* Email Section */}
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
@@ -48,7 +33,18 @@ const Contact = () => {
             {CONTACT.email.split(": ")[1]}
           </a>
         </motion.div>
-        <br />
+
+        {/* Phone Number Section */}
+        <motion.p
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ duration: 1 }}
+          className="my-4"
+        >
+          {CONTACT.phoneNo}
+        </motion.p>
+
+        {/* Download CV Button */}
         <motion.button
           onClick={() =>
             window.open(
@@ -67,6 +63,16 @@ const Contact = () => {
             Download CV
           </span>
         </motion.button>
+
+        {/* Address Section (Optional) */}
+        <motion.p
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ duration: 1 }}
+          className="my-4"
+        >
+          {CONTACT.address}
+        </motion.p>
 
         {/* Social Icons Section */}
         <motion.div className="flex flex-wrap justify-center gap-4 mx-auto mt-8">
