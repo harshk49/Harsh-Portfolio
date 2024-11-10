@@ -14,7 +14,7 @@ const Contact = () => {
         className="animate-text-gradient bg-gradient-to-r from-black via-[#FFD700] to-[#FFBCB3] bg-[200%_auto] bg-clip-text text-4xl lg:text-5xl text-transparent pb-2 my-20 text-center"
         style={{ whiteSpace: "nowrap" }}
       >
-        Get in Touch
+        Let's Connect
       </motion.h2>
       <div className="w-full max-w-md px-4 mx-auto tracking-tighter text-center">
         {/* Email Section */}
