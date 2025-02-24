@@ -22,8 +22,8 @@ const ABOUT_TEXT = (
     >
       My hands-on experience includes projects like the Notes App and the Airbnb
       Clone, where I harnessed the power of React, Node.js, and various
-      databases to deliver seamless functionalities. Currently, I'm developing
-      the IMC portal, honing my skills in project management and team
+      databases to deliver seamless functionalities. Currently, I&apos;m
+      developing the IMC portal, honing my skills in project management and team
       collaboration—because in this field, excellence is a team sport.
     </motion.p>
     <motion.p
@@ -33,10 +33,11 @@ const ABOUT_TEXT = (
       className="mb-4 text-justify"
     >
       I thrive in dynamic team environments and relish complex challenges,
-      always pushing for innovative solutions. Beyond technology, I'm passionate
-      about cricket and outdoor activities that fuel my competitive spirit. My
-      enthusiasm for entrepreneurship and emerging tech trends keeps me on the
-      pulse of innovation, ready to seize opportunities that define the future.
+      always pushing for innovative solutions. Beyond technology, I&apos;m
+      passionate about cricket and outdoor activities that fuel my competitive
+      spirit. My enthusiasm for entrepreneurship and emerging tech trends keeps
+      me on the pulse of innovation, ready to seize opportunities that define
+      the future.
     </motion.p>
   </>
 );
@@ -50,7 +51,7 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: -100 }}
             transition={{ duration: 0.5 }}
-            className="animate-text-gradient bg-gradient-to-r from-black via-[#FFD700] to-[#FFBCB3] bg-[200%_auto] bg-clip-text text-4xl lg:text-5xl text-transparent pb-2 my-20"
+            className="animate-text-gradient bg-gradient-to-r from-black via-[#FAB12F] to-[#FA812F ] bg-[200%_auto] bg-clip-text text-4xl lg:text-5xl text-transparent pb-2 my-20"
             style={{ whiteSpace: "nowrap" }} // Prevents line break
           >
             About Me

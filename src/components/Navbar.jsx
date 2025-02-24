@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "./../../public/hk_logo.png";
 
 const Navbar = () => {
-  const [isNavbarVisible, setIsNavbarVisible] = useState(false);
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true); // Navbar is initially visible
 
   const toggleNavbar = () => {
     setIsNavbarVisible(!isNavbarVisible);
@@ -29,8 +29,6 @@ const Navbar = () => {
     <div className="relative">
       {/* Logo container - stays at the top */}
       <div className="flex items-center justify-between px-4 py-5">
-        {" "}
-        {/* Added padding here */}
         <img
           className="w-10 h-10 mr-4 cursor-pointer"
           src={logo}

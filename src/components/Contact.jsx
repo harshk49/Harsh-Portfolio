@@ -1,6 +1,6 @@
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
-import { FaLinkedin, FaInstagram, FaFacebook, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import { TbBrandThreads } from "react-icons/tb";
 import { SiX } from "react-icons/si"; // Import the X icon
 
@@ -11,10 +11,10 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
-        className="animate-text-gradient bg-gradient-to-r from-black via-[#FFD700] to-[#FFBCB3] bg-[200%_auto] bg-clip-text text-4xl lg:text-5xl text-transparent pb-2 my-20 text-center"
+        className="animate-text-gradient bg-gradient-to-r from-black via-[#FAB12F] to-[#FA812F] bg-[200%_auto] bg-clip-text text-4xl lg:text-5xl text-transparent pb-2 my-20 text-center"
         style={{ whiteSpace: "nowrap" }}
       >
-        Let's Connect
+        Let&apos;s Connect
       </motion.h2>
       <div className="w-full max-w-md px-4 mx-auto tracking-tighter text-center">
         {/* Email Section */}
@@ -26,10 +26,7 @@ const Contact = () => {
           whileTap={{ scale: 0.95 }}
           className="mb-4"
         >
-          <a
-            href={`mailto:${CONTACT.email.split(": ")[1]}`}
-            className="text-white border-b"
-          >
+          <a href={`mailto:${CONTACT.email.split(": ")[1]}`}>
             {CONTACT.email.split(": ")[1]}
           </a>
         </motion.div>
@@ -41,7 +38,7 @@ const Contact = () => {
           transition={{ duration: 1 }}
           className="my-4"
         >
-          {CONTACT.phoneNo}
+          <a href={`tel:${CONTACT.phoneNo}`}>{CONTACT.phoneNo}</a>
         </motion.p>
 
         {/* Download CV Button */}

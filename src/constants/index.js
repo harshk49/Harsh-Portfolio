@@ -4,10 +4,11 @@ import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
 export const HERO_CONTENT = `
-    Web Developer by day, bug squasher by night! I specialize in building responsive, engaging websites that don’t just look pretty—they actually work 
-    (most of the time on the first try!). From sleek front-end frameworks to robust backend solutions, I’m all about making the web a smoother place, one 
-    line of code at a time. Let's turn your big ideas into a web experience that’s as functional as it is fun—complete with clean code, the latest tech, 
-    and just the right amount of nerdy enthusiasm!
+   I don’t just write code—I create web experiences that are fast, seamless, and built to last. From intuitive frontends to powerful backends, I focus on clean code, the latest tech, and solutions that actually work. Because a great website isn’t just about looking good—it’s about performing at its best.
+
+You have a vision? Let’s bring it to life. Because “the only time success comes before work is in the dictionary.” And I’m here to put in the work to make sure your web presence stands out.
+
+
 `;
 
 export const PROJECTS = [
