@@ -48,4 +48,4 @@ npm run dev
 ```
 Now you can view the portfolio in your browser at the port specified by Vite.
 
-## Let me know if you need any further modifications!
+
