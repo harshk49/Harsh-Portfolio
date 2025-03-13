@@ -4,7 +4,7 @@ This portfolio website has been migrated to a new repository and technology stac
 
 ## New Repository:
 The updated portfolio website is now available at:
-[GitHub Repository](https://github.com/harshk49/portfolio-website)
+[GitHub Repository](https://github.com/harshk49/portfolio-website){:target="_blank"}
 
 ## Previous Version:
 The earlier version of the portfolio was built using React and Vite, which had the drawback of increased initial load time due to client-side rendering.
@@ -14,5 +14,6 @@ The latest portfolio is now built with **Next.js**, offering improved performanc
 
 ## Live Deployment:
 You can view the new portfolio at:
-[Live Portfolio](https://harshkardile-two.vercel.app/)
+[Live Portfolio](https://harshkardile-two.vercel.app/){:target="_blank"}
+
 
